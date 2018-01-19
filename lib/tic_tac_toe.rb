@@ -178,15 +178,12 @@ end
 
 def play
 #loops until the game is over
-
   while !over?
     turn
   end
-
 #When game is over, it tells players who won (or whether it was a draw)
-    if over?
-
-      if draw?
+  if over?
+    if draw?
       puts"Cat's Game!"
 
     elsif winner == "X"
@@ -194,7 +191,6 @@ def play
 
       else
           puts "Congratulations O!"
-
         end
     end
 end
