@@ -34,4 +34,3 @@ WIN_COMBINATIONS = [
 
 
 end
-
