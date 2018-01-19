@@ -2,7 +2,7 @@ class TicTacToe
 
   #InstnaceVariable
 def initialize
-  @board = board
+  @board = [" "," "," "," "," "," "," "," "," "]
 end
 
 
