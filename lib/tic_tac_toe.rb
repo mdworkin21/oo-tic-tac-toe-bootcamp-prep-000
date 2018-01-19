@@ -147,9 +147,37 @@ def over?
     return true
   else
     false
+  end
+end
+
+
+def winner
+  x_won = []
+  o_won = []
+
+  @board.each do |count|
+      if count == "X"
+        x_won << count
+      elsif count == "O"
+        o_won << count
+      end
+  end
+
+  if o_won.length > x_won.length
+    return "O"
+
+  elsif (x_won.length > o_won.length) && won? != false
+    return "X"
+
+  else
+    return nil
 
   end
 end
+
+
+
+
 
 
 end
