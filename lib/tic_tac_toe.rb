@@ -143,7 +143,7 @@ end
 
 
 def over?
-  if draw? == true || won?
+  if draw? || won?
     return true
   else
     false
