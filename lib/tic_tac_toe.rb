@@ -97,6 +97,25 @@ def move(index, player_token)
    end
 
 
+   def turn
+
+     puts "Please enter 1-9:"
+     input = gets.strip
+     input = input_to_index(input)
+     #player_token = current_player()
+
+     if !valid_move?(input)
+           turn
+       end
+       move(input, current_player)
+       display_board
+
+    end
+
+
+
+
+
 
 
 end
