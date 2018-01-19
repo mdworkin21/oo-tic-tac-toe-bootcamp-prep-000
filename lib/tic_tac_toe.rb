@@ -142,6 +142,14 @@ def draw?
 end
 
 
+def over?
+  if draw? == true || won?
+    return true
+  else
+    false
+
+  end
+end
 
 
 end
