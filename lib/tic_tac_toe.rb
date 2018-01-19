@@ -133,14 +133,13 @@ end
 
 
 
-    def draw?(board)
-    if won?(board) && full?(board) || !full?(board)
-      return false
-    else
-      return true
-
-      end
-    end
+def draw?
+  if won? && full? || !full?
+    return false
+  else
+    return true
+  end
+end
 
 
 
