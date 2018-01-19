@@ -43,7 +43,38 @@ def move(index, player_token)
     !(@board[index].nil? || @board[index] == " ")
   end
 
+  def valid_move?(index)
+    if !position_taken?(index) && checkSpace(index)
+      return true
+    else
+      return false
+    end
+  end
 
+
+  def checkSpace(index)
+    if index == 0
+      return true
+    elsif index == 1
+      return true
+    elsif index == 2
+      return true
+    elsif index == 3
+      return true
+    elsif index == 4
+      return true
+    elsif index == 5
+      return true
+    elsif index == 6
+      return true
+    elsif index == 7
+      return true
+    elsif index == 8
+      return true
+    else
+      return false
+    end
+  end
 
 
 
