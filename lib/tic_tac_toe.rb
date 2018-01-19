@@ -33,9 +33,9 @@ end
 
 
 
-def move(board, index, player_token)
+def move(index, player_token)
     #player_token = current_player(board)
-    board[index] = player_token
+    @board[index] = player_token
   end
 
 
