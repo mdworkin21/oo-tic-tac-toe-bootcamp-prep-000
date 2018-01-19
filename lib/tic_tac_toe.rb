@@ -109,9 +109,22 @@ def move(index, player_token)
        end
        move(input, current_player)
        display_board
-
     end
 
+def won?
+
+  if WIN_COMBINATIONS.each do |win|
+     if win.all? {|x| @board[x] == "X"}
+        return win
+
+     elsif win.all? {|o| @board[o] == "O"}
+        return win
+     end
+   end
+     else
+        return false
+      end
+    end
 
 
 
